@@ -158,7 +158,7 @@ extension PageContentView: UICollectionViewDelegate {
         }
         //3.通知代理
         delegate?.pageContentView(contentView: self, progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
-        print("sourceIndex:\(sourceIndex),targetIndex:\(targetIndex)")
+//        print("sourceIndex:\(sourceIndex),targetIndex:\(targetIndex)")
    }
 }
 
