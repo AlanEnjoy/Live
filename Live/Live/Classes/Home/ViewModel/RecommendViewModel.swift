@@ -38,8 +38,8 @@ extension RecommendViewModel {
             
             //3.3.遍历字典，并且转成模型对象
             //3.3.1设置组的属性
-            self.bigDataGroup.tag_name = "热门"
-            self.bigDataGroup.icon_name = "home_header_hot"
+             self.bigDataGroup.tag_name = "热门"
+             self.bigDataGroup.icon_name = "home_header_hot"
             
             //3.3.2获取主播数据
             for dict in dataArray {
@@ -62,14 +62,13 @@ extension RecommendViewModel {
             
             //4.3.便利数组，获取字典，并将字典转成模型对象
             //4.3.1设置组的属性
-            self.prettyGroup.tag_name = "颜值"
-            self.prettyGroup.icon_name = "home_header_phone"
+              self.prettyGroup.tag_name = "颜值"
+              self.prettyGroup.icon_name = "home_header_phone"
             
             //4.3.2获取主播数据
             for dict in dataArray {
                 let anchor = AnchorModel(dict : dict)
                 self.prettyGroup.anchors.append(anchor)
-                print(anchor.anchor_city)
             }
      
             //4.4离开组
