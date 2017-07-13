@@ -23,7 +23,10 @@ class AnchorGroup: NSObject {
     var tag_name : String = ""
     ///组显示的图标
     var small_icon_url : String = ""
+    //组图标名
     var icon_name : String?
+    //游戏对应的图标
+    var icon_url : String = ""
     ///定义主播的模型对象数组
     public lazy var anchors : [AnchorModel] = [AnchorModel]()
     

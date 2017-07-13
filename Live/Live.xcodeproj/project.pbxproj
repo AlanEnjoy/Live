@@ -19,6 +19,10 @@
 		E70D52831F16135F005B06BE /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70D52821F16135F005B06BE /* CycleModel.swift */; };
 		E70D52861F161B4A005B06BE /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70D52841F161B4A005B06BE /* CollectionCycleCell.swift */; };
 		E70D52871F161B4A005B06BE /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70D52851F161B4A005B06BE /* CollectionCycleCell.xib */; };
+		E70D52891F17112B005B06BE /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70D52881F17112B005B06BE /* RecommendGameView.swift */; };
+		E70D528B1F171153005B06BE /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70D528A1F171153005B06BE /* RecommendGameView.xib */; };
+		E70D528E1F17610C005B06BE /* CollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70D528C1F17610C005B06BE /* CollectionGameCell.swift */; };
+		E70D528F1F17610C005B06BE /* CollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70D528D1F17610C005B06BE /* CollectionGameCell.xib */; };
 		E722E54E1F0CA3EB0060B5F7 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E722E54C1F0CA3EB0060B5F7 /* CollectionHeaderView.swift */; };
 		E722E54F1F0CA3EB0060B5F7 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E722E54D1F0CA3EB0060B5F7 /* CollectionHeaderView.xib */; };
 		E722E5521F0E6A540060B5F7 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E722E5501F0E6A540060B5F7 /* CollectionNormalCell.swift */; };
@@ -58,6 +62,10 @@
 		E70D52821F16135F005B06BE /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		E70D52841F161B4A005B06BE /* CollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionCycleCell.swift; path = Live/Classes/Home/Model/CollectionCycleCell.swift; sourceTree = SOURCE_ROOT; };
 		E70D52851F161B4A005B06BE /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionCycleCell.xib; path = Live/Classes/Home/Model/CollectionCycleCell.xib; sourceTree = SOURCE_ROOT; };
+		E70D52881F17112B005B06BE /* RecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecommendGameView.swift; path = Live/Classes/Home/Model/RecommendGameView.swift; sourceTree = SOURCE_ROOT; };
+		E70D528A1F171153005B06BE /* RecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RecommendGameView.xib; path = Live/Classes/Home/Model/RecommendGameView.xib; sourceTree = SOURCE_ROOT; };
+		E70D528C1F17610C005B06BE /* CollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionGameCell.swift; path = Live/Classes/Home/Model/CollectionGameCell.swift; sourceTree = SOURCE_ROOT; };
+		E70D528D1F17610C005B06BE /* CollectionGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionGameCell.xib; path = Live/Classes/Home/Model/CollectionGameCell.xib; sourceTree = SOURCE_ROOT; };
 		E722E54C1F0CA3EB0060B5F7 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionHeaderView.swift; path = Live/Classes/Home/Controller/CollectionHeaderView.swift; sourceTree = SOURCE_ROOT; };
 		E722E54D1F0CA3EB0060B5F7 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionHeaderView.xib; path = Live/Classes/Home/Controller/CollectionHeaderView.xib; sourceTree = SOURCE_ROOT; };
 		E722E5501F0E6A540060B5F7 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
@@ -244,6 +252,10 @@
 				E70D52801F15B3FE005B06BE /* RecommendCycleView.xib */,
 				E70D52841F161B4A005B06BE /* CollectionCycleCell.swift */,
 				E70D52851F161B4A005B06BE /* CollectionCycleCell.xib */,
+				E70D52881F17112B005B06BE /* RecommendGameView.swift */,
+				E70D528A1F171153005B06BE /* RecommendGameView.xib */,
+				E70D528C1F17610C005B06BE /* CollectionGameCell.swift */,
+				E70D528D1F17610C005B06BE /* CollectionGameCell.xib */,
 			);
 			name = View;
 			path = Controller/View;
@@ -362,10 +374,12 @@
 				E75DD6D21F0752290013D662 /* Main.storyboard in Resources */,
 				E722E5571F0E74C10060B5F7 /* PrettyCell.xib in Resources */,
 				E7D2C42C1F0776B1001CB187 /* Live.storyboard in Resources */,
+				E70D528F1F17610C005B06BE /* CollectionGameCell.xib in Resources */,
 				E70D52811F15B3FE005B06BE /* RecommendCycleView.xib in Resources */,
 				E70D52871F161B4A005B06BE /* CollectionCycleCell.xib in Resources */,
 				E7D2C4291F07757B001CB187 /* Home.storyboard in Resources */,
 				E7D2C4321F077716001CB187 /* Profile.storyboard in Resources */,
+				E70D528B1F171153005B06BE /* RecommendGameView.xib in Resources */,
 				E7D2C42F1F0776F8001CB187 /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,10 +452,12 @@
 				E7D2C4DC1F0900E4001CB187 /* PageContentView.swift in Sources */,
 				E722E5561F0E74C10060B5F7 /* PrettyCell.swift in Sources */,
 				E7D2C4D61F07F865001CB187 /* UIBarButtonItem-Extension.swift in Sources */,
+				E70D52891F17112B005B06BE /* RecommendGameView.swift in Sources */,
 				E7D2C4DA1F08A67A001CB187 /* Common.swift in Sources */,
 				E70D52771F0F8260005B06BE /* NSDate-Extension.swift in Sources */,
 				E70D527D1F146D90005B06BE /* CollectionBaseCell.swift in Sources */,
 				E722E5521F0E6A540060B5F7 /* CollectionNormalCell.swift in Sources */,
+				E70D528E1F17610C005B06BE /* CollectionGameCell.swift in Sources */,
 				E70D52701F0F7230005B06BE /* NetworkTools.swift in Sources */,
 				E70D52751F0F7759005B06BE /* RecommendViewModel.swift in Sources */,
 				E7D2C4431F07BE45001CB187 /* HomeViewController.swift in Sources */,
