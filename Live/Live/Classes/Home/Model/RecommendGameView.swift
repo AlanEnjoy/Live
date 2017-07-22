@@ -20,6 +20,7 @@ class RecommendGameView: UIView {
             groups?.removeFirst()
             groups?.remove(at: 1)
             groups?.remove(at: 4)
+            
             //2.添加“更多”组
             let moreGroup = AnchorGroup()
             moreGroup.tag_name = "更多"
@@ -68,7 +69,7 @@ extension RecommendGameView : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGameCellID, for: indexPath) as! CollectionGameCell
         
-        cell.group = groups![indexPath.item]
+        cell.baseGame = groups![indexPath.item]
         
         
         return cell
