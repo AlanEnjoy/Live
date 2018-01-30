@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AmuseMenuViewCell" customModule="Live" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="173"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="173"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lXr-3e-pnL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="173"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Lne-ju-i0f">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="gTV-IL-0wX" id="JN4-dh-WjM"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="lXr-3e-pnL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fhg-w1-eEI"/>
+                <constraint firstAttribute="bottom" secondItem="lXr-3e-pnL" secondAttribute="bottom" id="Ja3-QU-OOK"/>
+                <constraint firstAttribute="trailing" secondItem="lXr-3e-pnL" secondAttribute="trailing" id="Prl-6l-NEN"/>
+                <constraint firstItem="lXr-3e-pnL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vY2-3X-tuM"/>
+            </constraints>
+            <size key="customSize" width="261" height="137"/>
+            <connections>
+                <outlet property="collectionView" destination="lXr-3e-pnL" id="BEd-3p-Ace"/>
+            </connections>
+            <point key="canvasLocation" x="138.5" y="104.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

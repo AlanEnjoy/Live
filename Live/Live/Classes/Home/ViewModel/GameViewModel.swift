@@ -14,7 +14,7 @@ class GameViewModel {
 
 extension GameViewModel {
     func loadAllGameData(finishedCallback: @escaping() -> ()) {
-        NetworkTools.requestData(type: .GET, URLString: "https://capi.douyucdn.cn/api/v1/getColumnDetail", parameters: ["shortName" : "game"]) { (result) in
+        NetworkTools.requestData(type: .GET, URLString: "https://capi.douyucdn.cn/api/v1/getColumnDetail", parameters: ["tagName" : "game"]) { (result) in
             
             //1.获取到数据                      //字典类型
             guard let resultDict = result as? [String : Any] else { return }

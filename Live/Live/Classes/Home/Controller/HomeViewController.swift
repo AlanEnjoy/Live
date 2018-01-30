@@ -20,11 +20,8 @@ class HomeViewController: UIViewController {
         var childVcs = [UIViewController]()
         childVcs.append(RecommendViewController())
         childVcs.append(GameViewController())
-        for _ in 0..<2 {
-            let vc = UIViewController()
-            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
-            childVcs.append(vc)
-        }
+        childVcs.append(AmuseViewController())
+        childVcs.append(FunnyViewController())
         
         let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
         contentView.delegate = self
@@ -53,6 +50,7 @@ class HomeViewController: UIViewController {
 //MARK:- 设置UI界面
 extension HomeViewController {
         public func setupUI() {
+            
         //0.不需要调整scrollView的内边距
             automaticallyAdjustsScrollViewInsets = false
         //1.设置导航栏

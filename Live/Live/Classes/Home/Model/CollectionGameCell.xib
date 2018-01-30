@@ -11,23 +11,25 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="Live" customModuleProvider="target">
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="Live" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="英雄联盟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trW-qe-mn3">
-                        <rect key="frame" x="15" y="65" width="56" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trW-qe-mn3">
+                        <rect key="frame" x="16" y="65" width="49.5" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X4T-xP-9j7">
-                        <rect key="frame" x="18" y="14" width="45" height="45"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X4T-xP-9j7">
+                        <rect key="frame" x="18" y="14.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="wMg-9w-ZG2"/>
+                            <constraint firstAttribute="width" constant="45" id="wS8-1f-6HL"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <real key="value" value="22.5"/>
@@ -35,8 +37,24 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtv-vx-1sQ">
+                        <rect key="frame" x="0.0" y="90" width="80" height="1"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="0.29716930650684931" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="be9-NF-2Vv"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Xtv-vx-1sQ" secondAttribute="trailing" id="7mZ-zL-8wk"/>
+                <constraint firstAttribute="bottom" secondItem="Xtv-vx-1sQ" secondAttribute="bottom" constant="-1" id="AGQ-4D-oh0"/>
+                <constraint firstItem="trW-qe-mn3" firstAttribute="centerX" secondItem="X4T-xP-9j7" secondAttribute="centerX" id="HJK-FJ-BxA"/>
+                <constraint firstItem="X4T-xP-9j7" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OoP-vD-NiO"/>
+                <constraint firstItem="trW-qe-mn3" firstAttribute="top" secondItem="X4T-xP-9j7" secondAttribute="bottom" constant="5" id="hfS-02-DIy"/>
+                <constraint firstItem="Xtv-vx-1sQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m3F-zf-HbU"/>
+                <constraint firstItem="X4T-xP-9j7" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="uzj-WN-EWD"/>
+            </constraints>
             <connections>
                 <outlet property="iconImageView" destination="X4T-xP-9j7" id="YAR-gM-Kmv"/>
                 <outlet property="titleLabel" destination="trW-qe-mn3" id="MJE-I1-uAu"/>

@@ -12,21 +12,11 @@ fileprivate let kEdgeInsetMargin : CGFloat = 8
 
 class RecommendGameView: UIView {
     //MARK:- 定义数据的属性
-    var groups :[AnchorGroup]? {
+    var groups :[BaseGameModel]? {
         
         didSet {
-            //1.移除前两组数据
-            groups?.removeFirst()
-            groups?.removeFirst()
-            groups?.remove(at: 1)
-            groups?.remove(at: 4)
-            
-            //2.添加“更多”组
-            let moreGroup = AnchorGroup()
-            moreGroup.tag_name = "更多"
-            groups?.append(moreGroup)
-            
-            //3.刷新数据
+        
+            //MARK:- 刷新数据
             collectionView.reloadData()
         }
     }
@@ -73,5 +63,12 @@ extension RecommendGameView : UICollectionViewDataSource {
         
         
         return cell
+    }
+}
+
+//MARK:- 从xib中直接创建的类方法
+extension RecommendGameView {
+    class func recommandGameView() -> RecommendGameView {
+        return Bundle.main.loadNibNamed("RecommendGameView", owner: nil, options: nil)?.first as! RecommendGameView
     }
 }
